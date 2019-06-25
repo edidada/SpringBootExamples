@@ -1,5 +1,13 @@
 # README
 
+lua调试
+对lua调试最开始花掉了我不少时间，主要对于redis-cli命令不太熟悉。大家有一样问题的可以参见这篇文章。大致来说就是将写好的脚本放到redis所在文件夹下（我是windows环境），然后在cmd下执行 redis-cli.exe --eval rate_limit.lua test2(key，可重复) , (逗号分隔) init 10101 100 100 10 test2 (后跟参数，空格隔开)。
+
+作者：ro9er
+链接：https://www.jianshu.com/p/c8cee1507ccc
+来源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+
 运行，浏览器访问
 [限流测试 test](http://127.0.0.1:8080/test)
 
